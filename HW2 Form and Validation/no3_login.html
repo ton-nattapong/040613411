@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            document.querySelector('input[type="text"]').focus();
+        };
+    </script>
+    
+    
+        
+        <h1> เข้าสู่ระบบ </h1>
+    
+        <form action="no3_logout.html" method="get" >
+    
+        <table>
+            <tr>
+                <td> <label class="auto-cursor-target">Username: </label> </td>
+                <td> <input
+                    type="text"
+                    required> </td>
+            </tr>
+    
+            <tr>
+                <td> 
+                    <label>Password: </label></td>
+                <td>
+                     <input 
+                    type="password" 
+                    required> </td>
+            </tr>
+    
+            <tr>
+                <td colspan="2">
+                 <label >กรุณาพิมพ์ตามตัวเลขที่ปรากฏ: </label> <br>
+                <label> 1559 </label> <br>
+                <input 
+                type="text" 
+                maxlength="4" 
+                pattern="1559"  
+                required >
+            </tr>
+    
+        </table>
+    
+        <button 
+            type="submit" 
+            id="submit" 
+            value="Login">
+        <img
+            src="login.png" 
+            width="100px"
+            height="28px">
+        </button>
+        
+    
+        </form>
+        <style>
+
+            table , td 
+            {
+              border: 1px solid black;
+              padding: 0px;
+            }
+            table 
+            {
+              border-spacing: 1px;
+            }
+        
+        </style>
+        
+    
+</body>
+</html>
