@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ตรวจสอบการรับทุนการศึกษา</title>
+    <script>
+            let student = [
+        {
+        fullname: 'นายตั้งใจ เรียนมาก',
+        age: 18,
+        year: 1,
+        gpa: 3.40,
+        help: true
+        },
+        {
+        fullname: 'นายสง่ งาน ตลอดมา',
+        age: 19,
+        year: 2,
+        gpa: 3.00,
+        help: false
+        },
+        {
+        fullname: 'นางสาวใสใ่ จ ดงีาม',
+        age: 20,
+        year: 3,
+        gpa: 2.90,
+        help: true
+        },
+        {
+        fullname: 'นางสาวแจ่มใส่ ใจดี',
+        age: 19,
+        year: 2,
+        gpa: 2.4,
+        help: true
+        },
+        {
+        fullname: 'นางสาวมึสุข ดีงาม',
+        age: 20,
+        year: 1,
+        gpa: 3.90,
+        help: false
+        },
+        {
+        fullname: 'นายไก่ ขัน',
+        age: 20,
+        year: 2,
+        gpa: 3.70,
+        help: false
+        },
+        ]
+
+    for (let i = 0; i < student.length; i++) {
+            let a = student[i];
+
+            if ((a.year >= 2 && a.gpa >= 2.75 && a.help) || a.gpa >= 3.20) {
+                console.log(`${a.fullname} เกิดเมื่อปี ${(2566 - a.age)} ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย`);
+            } else {
+                console.log(`${a.fullname} เกิดเมื่อปี ${(2566 - a.age)} ไม่ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยไม่ถึงเกณฑ์ และยังไม่ได้ช่วยงานภาควิชา`);
+            }
+        }
+       
+      
+    </script>
+</head>
+<body>
+    
+
+   
+</body>
+</html>
